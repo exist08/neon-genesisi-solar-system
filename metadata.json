@@ -1,0 +1,5 @@
+{
+  "name": "Neon Genesis Solar System",
+  "description": "A visually stunning, interactive 3D solar system visualization using React Three Fiber, GSAP, and neon particle aesthetics.",
+  "requestFramePermissions": []
+}
