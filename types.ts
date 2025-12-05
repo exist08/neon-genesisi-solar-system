@@ -17,6 +17,7 @@ export enum ControlMode {
   MOUSE = 'MOUSE',
   KEYBOARD = 'KEYBOARD',
   AUTO = 'AUTO',
+  HAND = 'HAND',
 }
 
 export interface AppState {

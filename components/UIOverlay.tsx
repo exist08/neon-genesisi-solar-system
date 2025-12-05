@@ -6,6 +6,7 @@ import {
   MousePointer2,
   Keyboard as KeyboardIcon,
   Video,
+  Hand,
   Info,
   Settings,
   X
@@ -28,6 +29,7 @@ const UIOverlay: React.FC<UIOverlayProps> = ({ appState, isMobile }) => {
     [ControlMode.MOUSE]: <MousePointer2 size={18} />,
     [ControlMode.KEYBOARD]: <KeyboardIcon size={18} />,
     [ControlMode.AUTO]: <Video size={18} />,
+    [ControlMode.HAND]: <Hand size={18} />,
   };
 
   return (
@@ -144,6 +146,7 @@ const UIOverlay: React.FC<UIOverlayProps> = ({ appState, isMobile }) => {
             <ul className="text-xs text-gray-400 space-y-2 mb-6">
               <li>• <strong className="text-white">Mouse Mode:</strong> Drag to rotate, scroll to zoom, click to focus.</li>
               <li>• <strong className="text-white">Keyboard:</strong> Arrows to move, W/S for elevation, Space to reset.</li>
+              <li>• <strong className="text-white">Hand:</strong> Fist to rotate, Pinch to zoom, Palm to exit.</li>
               <li>• <strong className="text-white">Auto:</strong> Cinematic tour mode.</li>
             </ul>
             <button
